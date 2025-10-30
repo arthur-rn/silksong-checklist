@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hollow Knight: Silksong Completionist Checklist</title>
+  <link rel="icon" href="images/hornet_mask.png">
+
+  <style>
+    body {
+      background-color: #121212;
+      color: #f0e6d2;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    h1 {
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .checklist {
+      background-color: #1e1e1e;
+      border: 1px solid #d4af37;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+    }
+
+    .item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 10px;
+      accent-color: #d4af37;
+    }
+
+    .checklist-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    margin-top: 20px;
+    max-width: 1400px;
+    }
+
+    .category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px; 
+    flex: 1 1 300px; 
+    }
+
+    .progress-container {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #333;
+      border-radius: 5px;
+      height: 20px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background-color: #d4af37;
+      width: 0%;
+      transition: width 0.3s;
+    }
+
+    .progress-text {
+      text-align: center;
+      margin-top: 8px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <img src = "images/silksong_logo.png">
+
+  <h1>Silksong Checklist</h1>
+  <div class="progress-container">
+    <div class="progress-bar" id="progress-bar"></div>
+  </div>
+  <div class="progress-text" id="progress-text">0% done</div>
+
+  <div class="checklist-container">
+    <div class="category">
+        <img src="images/red_tools_icon_bar.png">
+        <h3>Red Tools</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="red_tool"> Straight Pin</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Threefold Pin</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Sting Shard</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Longpin</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Tacks</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Curveclaw / Curvesickle</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Throwing Ring</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Pimpillo</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Conchcutter</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Silkshot (Any variation)</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Delver's Drill</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Cogwork Wheel</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Cogfly</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Rosary Cannon</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Voltvessels</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Flintslate</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Flea Brew</div>
+            <div class="item"><input type="checkbox" class="red_tool"> Plasmium Phial</div>
+        </div>
+    </div> 
+
+    <div class="category">
+        <img src="images/blue_tools_icon_bar.png">
+        <h3>Blue Tools</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="blue_tool"> Druid's Eye / Druid's Eyes</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Magma Bell</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Warding Bell</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Pollip Pouch</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Fractured Mask</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Multibinder</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Weavelight</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Sawtooth Circlet</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Injector Band</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Spool Extender</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Reserve Bind</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Claw Mirror / Claw Mirrors</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Memory Crystal</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Snitch Pick</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Volt Filament</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Quick Sling</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Wreath of Purity</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Longclaw</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Wispfire Lantern</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Egg of Flealia</div>
+            <div class="item"><input type="checkbox" class="blue_tool"> Pin Badge</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/yellow_tools_icon_bar.png">
+        <h3>Yellow Tools</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="yellow_tool"> Compass</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Shard Pendant</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Magnetite Brooch</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Weighted Belt</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Barbed Bracelet</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Dead Bug's Purse / Shell Satchel</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Magnetite Dice</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Scuttlebrace</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Ascendant's Grip</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Spider Strings</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Silkspeed Anklets</div>
+            <div class="item"><input type="checkbox" class="yellow_tool"> Thief's Mark</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/silks_skills_icon_bar.png">
+        <h3>Silk Skills</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="silk_skills"> Silkspear</div>
+            <div class="item"><input type="checkbox" class="silk_skills"> Thread Storm</div>
+            <div class="item"><input type="checkbox" class="silk_skills"> Cross Stitch</div>
+            <div class="item"><input type="checkbox" class="silk_skills"> Sharpdart</div>
+            <div class="item"><input type="checkbox" class="silk_skills"> Rune Rage</div>
+            <div class="item"><input type="checkbox" class="silk_skills"> Pale Nails</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/hornet_dialogue_top.png">
+        <h3>Needle</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="needle"> Sharpened Needle</div>
+            <div class="item"><input type="checkbox" class="needle"> Shining Needle</div>
+            <div class="item"><input type="checkbox" class="needle"> Hivesteel Needle</div>
+            <div class="item"><input type="checkbox" class="needle"> Pale Steel Needle</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/hornet_dialogue_top.png">
+        <h3>Ancient Masks</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #1 — Bone Bottom</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #2 — Wormways</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #3 — Far Fields</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #4 — Shellwood</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #5 — Deep Docks</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #6 — Weavenest Alta</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #7 — Cogwork Core</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #8 — First Shrine in Songclave</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask Shard #9 — Savage Beastfly Grand Hunt</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #10 — Whispering Vaults</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #11 — Far Fields</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #12 — Mount Fay</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #13 — Blasted Steps</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #14 — Wisp Thicket</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #15 — Bilewater</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #16 — The Slab</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #17 — 'Fastest in Pharloom' wish in Far Fields (Act 3)</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #18 — 'Dark Hearts' wish in Bellhart (Act 3)</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #19 — Mount Fay (Act 3)</div>
+            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #20 — 'The Hidden Hunter' wish in Bellhart (Act 3)</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/hornet_dialogue_top.png">
+        <h3>Silk Spools</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #1 — Mosshome</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #2 — Above the magma in the Deep Docks</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #3 — Greymoor</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #4 — Bellhart</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #5 — Weavenest Atla</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #6 — Flea caravan in Blasted Steps</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #7 — Grand Gate</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #8 — Below the Ventrica in the Underworks</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #9 — Below the spikes in the Underworks</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #10 — Cogwork Core</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #11 — Under the elevator in Whiteward</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #12 — 'Balm for the Wounded' quest in Whiteward</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #13 — High Halls</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #14 — Mount Fay</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #15 — Songclave</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #16 — Hidden cave in the Deep Docks</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #17 — Grindle in Blasted Steps</div>
+            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #18 — Memorium</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/hornet_dialogue_top.png">
+        <h3>Silk Hearts</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="silk_hearts"> Silk Heart #1</div>
+            <div class="item"><input type="checkbox" class="silk_hearts"> Silk Heart #2</div>
+            <div class="item"><input type="checkbox" class="silk_hearts"> Silk Heart #3</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/hornet_dialogue_top.png">
+        <h3>Miscellaneous</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="miscellaneous"> Sylphsong</div>
+            <div class="item"><input type="checkbox" class="miscellaneous"> Everbloom</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/hornet_dialogue_top.png">
+        <h3>Crests</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="crests"> Reaper</div>
+            <div class="item"><input type="checkbox" class="crests"> Wanderer</div>
+            <div class="item"><input type="checkbox" class="crests"> Beast</div>
+            <div class="item"><input type="checkbox" class="crests"> Witch</div>
+            <div class="item"><input type="checkbox" class="crests"> Architect</div>
+            <div class="item"><input type="checkbox" class="crests"> Shaman</div>
+        </div>
+    </div>
+
+
+    <div class="category">
+        <img src="images/hornet_dialogue_top.png">
+        <h3>Crafting Kit Upgrades</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="crafting_kit"> Crafting Kit #1</div>
+            <div class="item"><input type="checkbox" class="crafting_kit"> Crafting Kit #2</div>
+            <div class="item"><input type="checkbox" class="crafting_kit"> Crafting Kit #3</div>
+            <div class="item"><input type="checkbox" class="crafting_kit"> Crafting Kit #4</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/hornet_dialogue_top.png">
+        <h3>Tool Pouch Upgrades</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="tool_pouch"> Tool Pouch #1</div>
+            <div class="item"><input type="checkbox" class="tool_pouch"> Tool Pouch #2</div>
+            <div class="item"><input type="checkbox" class="tool_pouch"> Tool Pouch #3</div>
+            <div class="item"><input type="checkbox" class="tool_pouch"> Tool Pouch #4</div>
+        </div>
+    </div>
+
+    <div class="category">
+        <img src="images/hornet_dialogue_top.png">
+        <h3>Abilities</h3>
+        <div class="checklist">
+            <div class="item"><input type="checkbox" class="abilities"> Swift Step</div>
+            <div class="item"><input type="checkbox" class="abilities"> Cling Grip</div>
+            <div class="item"><input type="checkbox" class="abilities"> Needolin</div>
+            <div class="item"><input type="checkbox" class="abilities"> Needle Strike</div>
+            <div class="item"><input type="checkbox" class="abilities"> Clawline</div>
+            <div class="item"><input type="checkbox" class="abilities"> Silk Soar</div>
+        </div>
+    </div>
+  </div>
+
+
+  <script>
+    const checkboxes = document.querySelectorAll('.red_tool, .blue_tool, .yellow_tool, .needle, .mask_shards, .spool_fragments, .silk_hearts, .miscellaneous, .crests, .silk_skills, .crafting_kit, .tool_pouch, .abilities');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+
+    function updateProgress() {
+      const total = checkboxes.length;
+      const checked = Array.from(checkboxes).filter(c => c.checked).length;
+      const percent = Math.round((checked / total) * 100);
+
+      progressBar.style.width = percent + '%';
+      progressText.textContent = `${percent}% completo`;
+    }
+
+    checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
+  </script>
+</body>
+</html>
