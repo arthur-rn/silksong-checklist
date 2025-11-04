@@ -16,5 +16,5 @@ Site feito para acompanhar o progresso feito no jogo Hollow Knight: Silksong atr
 - JavaScript
 
 ## 🚀 Deploy
-O projeto está hospedado no Vercel através do link abaixo:
+O projeto está hospedado no Vercel através do seguinte link:
 https://silksong-checklist.vercel.app/
