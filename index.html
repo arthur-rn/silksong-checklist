@@ -1,329 +1,284 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hollow Knight: Silksong Completionist Checklist</title>
-  <link rel="icon" href="images/hornet_mask.png">
-
-  <style>
-    body {
-      background-color: #121212;
-      color: #f0e6d2;
-      font-family: 'Segoe UI', sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px;
-    }
-
-    h1 {
-      color: #d4af37;
-      margin-bottom: 10px;
-    }
-
-    .checklist {
-      background-color: #1e1e1e;
-      border: 1px solid #d4af37;
-      border-radius: 10px;
-      padding: 20px;
-      width: 300px;
-    }
-
-    .item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    input[type="checkbox"] {
-      margin-right: 10px;
-      accent-color: #d4af37;
-    }
-
-    .checklist-container {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 30px; 
-    margin-top: 20px;
-    max-width: 1400px;
-    }
-
-    .category {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 320px; 
-    flex: 1 1 300px; 
-    }
-
-    .progress-container {
-      margin-top: 20px;
-      width: 100%;
-      background-color: #333;
-      border-radius: 5px;
-      height: 20px;
-      overflow: hidden;
-    }
-
-    .progress-bar {
-      height: 100%;
-      background-color: #d4af37;
-      width: 0%;
-      transition: width 0.3s;
-    }
-
-    .progress-text {
-      text-align: center;
-      margin-top: 8px;
-      font-weight: bold;
-    }
-  </style>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hollow Knight: Silksong Completionist Checklist</title>
+    <link rel="icon" href="images/hornet_mask.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <img src = "images/silksong_logo.png">
+    <img src = "images/silksong_logo.png">
 
-  <h1>Silksong Checklist</h1>
-  <div class="progress-container">
-    <div class="progress-bar" id="progress-bar"></div>
-  </div>
-  <div class="progress-text" id="progress-text">0% done</div>
+    <h1>Silksong Checklist</h1>
+    <div class="progress-text" id="progress-text">0% done</div>
+    <button id="uncheck-all">Uncheck All</button>
 
-  <div class="checklist-container">
-    <div class="category">
-        <img src="images/red_tools_icon_bar.png">
-        <h3>Red Tools</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="red_tool"> Straight Pin</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Threefold Pin</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Sting Shard</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Longpin</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Tacks</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Curveclaw / Curvesickle</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Throwing Ring</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Pimpillo</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Conchcutter</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Silkshot (Any variation)</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Delver's Drill</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Cogwork Wheel</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Cogfly</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Rosary Cannon</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Voltvessels</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Flintslate</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Flea Brew</div>
-            <div class="item"><input type="checkbox" class="red_tool"> Plasmium Phial</div>
+    <div class="checklist-container">
+        <div class="category">
+            <img src="images/red_tools_icon_bar.png">
+            <h3><a href="https://hollowknight.wiki/w/Tools#red-tools" target="_blank">Red Tools</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Straight_Pin" target="_blank">Straight Pin</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Threefold_Pin" target="_blank">Threefold Pin</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Sting_Shard" target="_blank">Sting Shard</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Tacks" target="_blank">Tacks</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Longpin" target="_blank">Longpin</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Curveclaw" target="_blank">Curveclaw</a> / <a href="https://hollowknight.wiki/w/Curvesickle" target="_blank">Curvesickle</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Throwing_Ring" target="_blank">Throwing Ring</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Pimpillo" target="_blank">Pimpillo</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Conchcutter" target="_blank">Conchcutter</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Silkshot" target="_blank">Silkshot (Any variation)</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Delver%27s_Drill" target="_blank">Delver's Drill</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Cogwork_Wheel" target="_blank">Cogwork Wheel</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Cogfly" target="_blank">Cogfly</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Rosary_Cannon" target="_blank">Rosary Cannon</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Voltvessels" target="_blank">Voltvessels</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Flintslate" target="_blank">Flintslate</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Flea_Brew" target="_blank">Flea Brew</a></div></label>
+                <label><div class="item"><input type="checkbox" class="red-tool"><a href="https://hollowknight.wiki/w/Plasmium_Phial" target="_blank">Plasmium Phial</a></div></label>
+            </div>
+        </div> 
+
+        <div class="category">
+            <img src="images/blue_tools_icon_bar.png">
+            <h3><a href="https://hollowknight.wiki/w/Tools#blue-tools" target="_blank">Blue Tools</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Druid%27s_Eye" target="_blank">Druid's Eye</a> / <a href="https://hollowknight.wiki/w/Druid%27s_Eyes" target="_blank">Druid's Eyes</a></div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Magma_Bell" target="_blank">Magma Bell</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Warding_Bell" target="_blank">Warding Bell</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Pollip_Pouch" target="_blank">Pollip Pouch</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Fractured_Mask" target="_blank">Fractured Mask</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Multibinder" target="_blank">Multibinder</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Weavelight" target="_blank">Weavelight</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Sawtooth_Circlet" target="_blank">Sawtooth Circlet</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Injector_Band" target="_blank">Injector Band</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Spool_Extender" target="_blank">Spool Extender</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Reserve_Bind" target="_blank">Reserve Bind</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Claw_Mirror" target="_blank">Claw Mirror</a> / <a href="https://hollowknight.wiki/w/Claw_Mirrors" target="_blank">Claw Mirrors</a></div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Memory_Crystal" target="_blank">Memory Crystal</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Snitch_Pick" target="_blank">Snitch Pick</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Volt_Filament" target="_blank">Volt Filament</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Quick_Sling" target="_blank">Quick Sling</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Wreath_of_Purity" target="_blank">Wreath of Purity</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Longclaw" target="_blank">Longclaw</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Wispfire_Lantern" target="_blank">Wispfire Lantern</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Egg_of_Flealia" target="_blank">Egg of Flealia</div></label>
+                <label><div class="item"><input type="checkbox" class="blue-tool"><a href="https://hollowknight.wiki/w/Pin_Badge" target="_blank">Pin Badge</div></label>
+            </div>
         </div>
-    </div> 
 
-    <div class="category">
-        <img src="images/blue_tools_icon_bar.png">
-        <h3>Blue Tools</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="blue_tool"> Druid's Eye / Druid's Eyes</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Magma Bell</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Warding Bell</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Pollip Pouch</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Fractured Mask</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Multibinder</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Weavelight</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Sawtooth Circlet</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Injector Band</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Spool Extender</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Reserve Bind</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Claw Mirror / Claw Mirrors</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Memory Crystal</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Snitch Pick</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Volt Filament</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Quick Sling</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Wreath of Purity</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Longclaw</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Wispfire Lantern</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Egg of Flealia</div>
-            <div class="item"><input type="checkbox" class="blue_tool"> Pin Badge</div>
+        <div class="category">
+            <img src="images/yellow_tools_icon_bar.png">
+            <h3><a href="https://hollowknight.wiki/w/Tools#yellow-tools" target="_blank">Yellow Tools</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Compass" target="_blank">Compass</div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Shard_Pendant" target="_blank">Shard Pendant</div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Magnetite_Brooch" target="_blank">Magnetite Brooch</div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Weighted_Belt" target="_blank">Weighted Belt</div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Barbed_Bracelet" target="_blank">Barbed Bracelet</div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Dead_Bug%27s_Purse" target="_blank">Dead Bug's Purse</a>&nbsp;/&nbsp;<a href="https://hollowknight.wiki/w/Shell_Satchel" target="_blank">Shell Satchel</a></div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Magnetite_Dice" target="_blank">Magnetite Dice</a></div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Scuttlebrace" target="_blank">Scuttlebrace</a></div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Ascendant%27s_Grip" target="_blank">Ascendant's Grip</a></div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Spider_Strings" target="_blank">Spider Strings</a></div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Silkspeed_Anklets" target="_blank">Silkspeed Anklets</a></div></label>
+                <label><div class="item"><input type="checkbox" class="yellow-tool"><a href="https://hollowknight.wiki/w/Thief%27s_Mark" target="_blank">Thief's Mark</a></div></label>
+            </div>
         </div>
-    </div>
 
-    <div class="category">
-        <img src="images/yellow_tools_icon_bar.png">
-        <h3>Yellow Tools</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="yellow_tool"> Compass</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Shard Pendant</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Magnetite Brooch</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Weighted Belt</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Barbed Bracelet</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Dead Bug's Purse / Shell Satchel</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Magnetite Dice</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Scuttlebrace</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Ascendant's Grip</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Spider Strings</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Silkspeed Anklets</div>
-            <div class="item"><input type="checkbox" class="yellow_tool"> Thief's Mark</div>
+        <div class="category">
+            <img src="images/silks_skills_icon_bar.png">
+            <h3><a href="https://hollowknight.wiki/w/Skills_and_Abilities_(Silksong)#silk-skills" target="_blank">Silk Skills</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="silk-skills"><a href="https://hollowknight.wiki/w/Silkspear" target="_blank">Silkspear</a></div></label>
+                <label><div class="item"><input type="checkbox" class="silk-skills"><a href="https://hollowknight.wiki/w/Thread_Storm" target="_blank">Thread Storm</a></div></label>
+                <label><div class="item"><input type="checkbox" class="silk-skills"><a href="https://hollowknight.wiki/w/Cross_Stitch" target="_blank">Cross Stitch</a></div></label>
+                <label><div class="item"><input type="checkbox" class="silk-skills"><a href="https://hollowknight.wiki/w/Sharpdart" target="_blank">Sharpdart</a></div></label>
+                <label><div class="item"><input type="checkbox" class="silk-skills"><a href="https://hollowknight.wiki/w/Rune_Rage" target="_blank">Rune Rage</a></div></label>
+                <label><div class="item"><input type="checkbox" class="silk-skills"><a href="https://hollowknight.wiki/w/Pale_Nails" target="_blank">Pale Nails</a></div></label>
+            </div>
         </div>
-    </div>
 
-    <div class="category">
-        <img src="images/silks_skills_icon_bar.png">
-        <h3>Silk Skills</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="silk_skills"> Silkspear</div>
-            <div class="item"><input type="checkbox" class="silk_skills"> Thread Storm</div>
-            <div class="item"><input type="checkbox" class="silk_skills"> Cross Stitch</div>
-            <div class="item"><input type="checkbox" class="silk_skills"> Sharpdart</div>
-            <div class="item"><input type="checkbox" class="silk_skills"> Rune Rage</div>
-            <div class="item"><input type="checkbox" class="silk_skills"> Pale Nails</div>
+        <div class="category">
+            <img src="images/hornet_dialogue_top.png">
+            <h3><a href="https://hollowknight.wiki/w/Needle" target="_blank">Needle</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="needle">Sharpened Needle (For free after completing 'The Threadspun Town')</div></label>
+                <label><div class="item"><input type="checkbox" class="needle"><span>Shining Needle (<img src="images/pale_oil_icon.png" alt="pale_oil" class="icon">1)</span></div></label>
+                <label><div class="item"><input type="checkbox" class="needle"><span>Hivesteel Needle (<img src="images/pale_oil_icon.png" alt="pale_oil" class="icon">1 and&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/rosary_icon.png" alt="rosary" class="icon">400)</span></div></label>
+                <label><div class="item"><input type="checkbox" class="needle"><span>Pale Steel Needle (<img src="images/pale_oil_icon.png" alt="pale_oil" class="icon">1 and&nbsp;&nbsp;&nbsp;&nbsp; <img src="images/rosary_icon.png" alt="rosary" class="icon">680)</span></div></label>
+            </div>
         </div>
-    </div>
 
-    <div class="category">
-        <img src="images/hornet_dialogue_top.png">
-        <h3>Needle</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="needle"> Sharpened Needle</div>
-            <div class="item"><input type="checkbox" class="needle"> Shining Needle</div>
-            <div class="item"><input type="checkbox" class="needle"> Hivesteel Needle</div>
-            <div class="item"><input type="checkbox" class="needle"> Pale Steel Needle</div>
+        <div class="category">
+            <img src="images/hornet_dialogue_top.png">
+            <h3><a href="https://hollowknight.wiki/w/Mask_Shard_(Silksong)" target="_blank">Ancient Masks</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask1"><span>Bought from <a href="https://hollowknight.wiki/w/Pebb" target="_blank"> Pebb</a> in Bone Bottom for <img src="images/rosary_icon.png" alt="rosary" class="icon">300 / In Act 3, Bought from <a href="https://hollowknight.wiki/w/Grindle" target="_blank">Grindle</a> in Blasted Steps for <img src="images/rosary_icon.png" alt="rosary" class="icon">320</div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask2"><span>Lower Wormways behind a breakable wall</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask3"><span>Passageway between The Marrow and Deep Docks</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask4"><span>Area above Seamstress's home in Far Fields</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask5"><span>Centre of Shellwood at the end of a platforming challenge</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask6"><span>East Weavenest Atla behind a breakable wall</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask7"><span>Sold by <a href="https://hollowknight.wiki/w/Jubilana" target="_blank">Jubilana</a> in Songclave for <img src="images/rosary_icon.png" alt="rosary" class="icon">750</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask8"><span>West Cogwork Core past enemy gauntlet</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask9"><span>Behind moving box puzzle in central Whispering Vaults</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask10"><span>Reward for completing the <a href="https://hollowknight.wiki/w/Savage_Beastfly_(Wish)" target="_blank">'Savage Beastfly'</a> Wish.</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask11"><span>Inside bone building in east Far Fields</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask12"><span>Southwest Mount Fay, west of the bench</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask13"><span>Northeast part of the Slab</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask14"><span>At the end of a hallway in East Bilewater filled with Slubberlugs</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask15"><span>East Wisp Thicket</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask16"><span>West Blasted Steps</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask17"><span>Brightvein (acessible by using Silk Soar in a rock floating in the ice water in Mount Fay)</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask18"><span>Reward for completing <a href="https://hollowknight.wiki/w/Fastest_in_Pharloom" target="_blank">'Fastest in Pharloom'</a> wish in east Far Fields</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask19"><span>Reward for completing the <a href="https://hollowknight.wiki/w/Dark_Hearts" target="_blank">'Dark Hearts'</a> wish</span></div></label>
+                <label><div class="item"><input type="checkbox" class="mask-shards" data-weight ="0.25" data-id="mask20"><span>Reward for completing the <a href="https://hollowknight.wiki/w/The_Hidden_Hunter" target="_blank">'The Hidden Hunter'</a> wish</span></div></label>
+            </div>
         </div>
-    </div>
 
-    <div class="category">
-        <img src="images/hornet_dialogue_top.png">
-        <h3>Ancient Masks</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #1 — Bone Bottom</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #2 — Wormways</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #3 — Far Fields</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #4 — Shellwood</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #5 — Deep Docks</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #6 — Weavenest Alta</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #7 — Cogwork Core</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #8 — First Shrine in Songclave</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask Shard #9 — Savage Beastfly Grand Hunt</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #10 — Whispering Vaults</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #11 — Far Fields</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #12 — Mount Fay</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #13 — Blasted Steps</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #14 — Wisp Thicket</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #15 — Bilewater</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #16 — The Slab</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #17 — 'Fastest in Pharloom' wish in Far Fields (Act 3)</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #18 — 'Dark Hearts' wish in Bellhart (Act 3)</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #19 — Mount Fay (Act 3)</div>
-            <div class="item"><input type="checkbox" class="mask_shards"> Mask shard #20 — 'The Hidden Hunter' wish in Bellhart (Act 3)</div>
+        <div class="category">
+            <img src="images/hornet_dialogue_top.png">
+            <h3><a href="https://hollowknight.wiki/w/Spool_Fragment" target="_blank">Silk Spools</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool1"><span>Behind a breakable wall in a mossy area above Bone Bottom</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool2"><span>Central section of Deep Docks</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool3"><span>In Greymoor, above Shakra's bench</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool4"><span>Sold by <a href="https://hollowknight.wiki/w/Frey" target="_blank">Frey</a> in Bellhart for <img src="images/rosary_icon.png" alt="rosary" class="icon">270</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool5"><span>In a passage in Weavenest Atla</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool6"><span>In a vertical room in the west section of The Slab</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool7"><span>At the top of the Grand Gate</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool8"><span>Central section of the Underworks</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool9"><span>Given by the Flea Caravan upon their ascent to the Grand Gate</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool10"><span>In Whiteward, under the lift</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool11"><span>Southeast section of the lower Cogwork Core</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool12"><span>Lower right section of the Underworks</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool13"><span>Given by Sherma after completing the <a href="https://hollowknight.wiki/w/Balm_for_the_Wounded" target="_blank">'Balm for the Wounded'</a> wish</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool14"><span>Sold by <a href="https://hollowknight.wiki/w/Jubilana" target="_blank">Jubilana</a> for <img src="images/rosary_icon.png" alt="rosary" class="icon">500</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool15"><span>Southeast section of Deep Docks</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool16"><span>In High Halls at the highest point in the left vertical room</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool17"><span>In the western section of the Memorium</span></div></label>
+                <label><div class="item"><input type="checkbox" class="spool-fragments" data-weight="0.5" data-id="spool18"><span>Sold by <a href="https://hollowknight.wiki/w/Grindle" target="_blank">Grindle</a> for <img src="images/rosary_icon.png" alt="rosary" class="icon">680</span></div></label>
+            </div>
         </div>
-    </div>
 
-    <div class="category">
-        <img src="images/hornet_dialogue_top.png">
-        <h3>Silk Spools</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #1 — Mosshome</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #2 — Above the magma in the Deep Docks</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #3 — Greymoor</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #4 — Bellhart</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #5 — Weavenest Atla</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #6 — Flea caravan in Blasted Steps</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #7 — Grand Gate</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #8 — Below the Ventrica in the Underworks</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #9 — Below the spikes in the Underworks</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #10 — Cogwork Core</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #11 — Under the elevator in Whiteward</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #12 — 'Balm for the Wounded' quest in Whiteward</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #13 — High Halls</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #14 — Mount Fay</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #15 — Songclave</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #16 — Hidden cave in the Deep Docks</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #17 — Grindle in Blasted Steps</div>
-            <div class="item"><input type="checkbox" class="spool_fragments"> Spool fragment #18 — Memorium</div>
+        <div class="category">
+            <img src="images/hornet_dialogue_top.png">
+            <h3><a href="https://hollowknight.wiki/w/Silk_Heart" target="_blank">Silk Hearts</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="silk-hearts"><span>Reward for defeating <a href="https://hollowknight.wiki/w/Bell_Beast" target="_blank">Bell Beast</a></span></div></label>
+                <label><div class="item"><input type="checkbox" class="silk-hearts"><span>Reward for defeating <a href="https://hollowknight.wiki/w/The_Unravelled" target="_blank">The Unravelled</a></span></div></label>
+                <label><div class="item"><input type="checkbox" class="silk-hearts"><span>Reward for defeating <a href="https://hollowknight.wiki/w/Lace" target="_blank">Lace (2nd Fight)</a></span></div></label>
+            </div>
         </div>
-    </div>
 
-    <div class="category">
-        <img src="images/hornet_dialogue_top.png">
-        <h3>Silk Hearts</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="silk_hearts"> Silk Heart #1</div>
-            <div class="item"><input type="checkbox" class="silk_hearts"> Silk Heart #2</div>
-            <div class="item"><input type="checkbox" class="silk_hearts"> Silk Heart #3</div>
+        <div class="category">
+            <img src="images/hornet_dialogue_top.png">
+            <h3><a href="https://hollowknight.wiki/w/Crests#Crests" target="_blank">Crests</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="crests"><a href="https://hollowknight.wiki/w/Reaper_Crest" target="_blank">Reaper</a></div></label>
+                <label><div class="item"><input type="checkbox" class="crests"><a href="https://hollowknight.wiki/w/Wanderer_Crest" target="_blank">Wanderer</a></div></label>
+                <label><div class="item"><input type="checkbox" class="crests"><a href="https://hollowknight.wiki/w/Beast_Crest" target="_blank">Beast</a></div></label>
+                <label><div class="item"><input type="checkbox" class="crests"><a href="https://hollowknight.wiki/w/Witch_Crest" target="_blank">Witch</a></div></label>
+                <label><div class="item"><input type="checkbox" class="crests"><a href="https://hollowknight.wiki/w/Architect_Crest" target="_blank">Architect</a></div></label>
+                <label><div class="item"><input type="checkbox" class="crests"><a href="https://hollowknight.wiki/w/Shaman_Crest" target="_blank">Shaman</a></div></label>
+            </div>
         </div>
-    </div>
 
-    <div class="category">
-        <img src="images/hornet_dialogue_top.png">
-        <h3>Miscellaneous</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="miscellaneous"> Sylphsong</div>
-            <div class="item"><input type="checkbox" class="miscellaneous"> Everbloom</div>
+
+        <div class="category">
+            <img src="images/hornet_dialogue_top.png">
+            <h3><a href="https://hollowknight.wiki/w/Tool_Pouch_%26_Crafting_Kit#How_to_Acquire" target="_blank">Crafting Kit Upgrades</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="crafting-kit"><span>Purchased from <a href="https://hollowknight.wiki/w/Forge_Daughter" target="_blank">Forge Daughter</a> in Deep Docks for 180</span></div></label>
+                <label><div class="item"><input type="checkbox" class="crafting-kit"><span>Reward from <a href="https://hollowknight.wiki/w/Creige" target="_blank">Creige</a> in Halfway Home for completing the <a href="https://hollowknight.wiki/w/Crawbug_Clearing" target="_blank"> 'Crawbug Clearing'</a> wish</span></div></label>
+                <label><div class="item"><input type="checkbox" class="crafting-kit"><span>Purchased from <a href="https://hollowknight.wiki/w/Twelfth_Architect" target="_blank">Twelfth Architect</a> in Underworks for <img src="images/rosary_icon.png" alt="rosary" class="icon">450</span></div></label>
+                <label><div class="item"><input type="checkbox" class="crafting-kit"><span>Purchased from <a href="https://hollowknight.wiki/w/Grindle" target="_blank">Grindle</a> in Blasted Steps for <img src="images/rosary_icon.png" alt="rosary" class="icon">700</span></div></label>
+            </div>
         </div>
-    </div>
 
-    <div class="category">
-        <img src="images/hornet_dialogue_top.png">
-        <h3>Crests</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="crests"> Reaper</div>
-            <div class="item"><input type="checkbox" class="crests"> Wanderer</div>
-            <div class="item"><input type="checkbox" class="crests"> Beast</div>
-            <div class="item"><input type="checkbox" class="crests"> Witch</div>
-            <div class="item"><input type="checkbox" class="crests"> Architect</div>
-            <div class="item"><input type="checkbox" class="crests"> Shaman</div>
+        <div class="category">
+            <img src="images/hornet_dialogue_top.png">
+            <h3><a href="https://hollowknight.wiki/w/Tool_Pouch_%26_Crafting_Kit#How_to_Acquire" target="_blank">Tool Pouch Upgrades</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="tool-pouch"><span>Purchased from <a href="https://hollowknight.wiki/w/Mort" target="_blank">Mort</a> in Pilgrim's Rest for <img src="images/rosary_icon.png" alt="rosary" class="icon">220 / In Act 3, purchased from <a href="https://hollowknight.wiki/w/Grindle" target="_blank">Grindle</a> in Blasted Steps for <img src="images/rosary_icon.png" alt="rosary" class="icon">220</span></div></label>
+                <label><div class="item"><input type="checkbox" class="tool-pouch"><span>Reward from <a href="https://hollowknight.wiki/w/Loddie" target="_blank">Loddie</a> in The Marrow after beating his first challenge / In Act 3, found in <a href="https://hollowknight.wiki/w/Loddie" target="_blank">Loddie's</a> former location, on a table</span></div></label>
+                <label><div class="item"><input type="checkbox" class="tool-pouch"><span>Reward from <a href="https://hollowknight.wiki/w/Nuu" target="_blank">Nuu</a> in Halfway Home for completing the <a href="https://hollowknight.wiki/w/Bugs_of_Pharloom" target="_blank">'Bugs of Pharloom'</a> wish</span></div></label>
+                <label><div class="item"><input type="checkbox" class="tool-pouch"><span>Reward from <a href="https://hollowknight.wiki/w/Fleamaster_Mooshka" target="_blank">Fleamaster Mooshka</a> in Fleatopia</span></div></label>
+            </div>
         </div>
-    </div>
 
-
-    <div class="category">
-        <img src="images/hornet_dialogue_top.png">
-        <h3>Crafting Kit Upgrades</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="crafting_kit"> Crafting Kit #1</div>
-            <div class="item"><input type="checkbox" class="crafting_kit"> Crafting Kit #2</div>
-            <div class="item"><input type="checkbox" class="crafting_kit"> Crafting Kit #3</div>
-            <div class="item"><input type="checkbox" class="crafting_kit"> Crafting Kit #4</div>
-        </div>
-    </div>
-
-    <div class="category">
-        <img src="images/hornet_dialogue_top.png">
-        <h3>Tool Pouch Upgrades</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="tool_pouch"> Tool Pouch #1</div>
-            <div class="item"><input type="checkbox" class="tool_pouch"> Tool Pouch #2</div>
-            <div class="item"><input type="checkbox" class="tool_pouch"> Tool Pouch #3</div>
-            <div class="item"><input type="checkbox" class="tool_pouch"> Tool Pouch #4</div>
-        </div>
-    </div>
-
-    <div class="category">
-        <img src="images/hornet_dialogue_top.png">
-        <h3>Abilities</h3>
-        <div class="checklist">
-            <div class="item"><input type="checkbox" class="abilities"> Swift Step</div>
-            <div class="item"><input type="checkbox" class="abilities"> Cling Grip</div>
-            <div class="item"><input type="checkbox" class="abilities"> Needolin</div>
-            <div class="item"><input type="checkbox" class="abilities"> Needle Strike</div>
-            <div class="item"><input type="checkbox" class="abilities"> Clawline</div>
-            <div class="item"><input type="checkbox" class="abilities"> Silk Soar</div>
+        <div class="category">
+            <img src="images/hornet_dialogue_top.png">
+            <h3><a href="https://hollowknight.wiki/w/Skills_and_Abilities_(Silksong)#Ancestral_Arts" target="_blank">Abilities</a></h3>
+            <div class="checklist">
+                <label><div class="item"><input type="checkbox" class="abilities"><a href="https://hollowknight.wiki/w/Swift_Step#How_to_Acquire" target="_blank">Swift Step</a></div></label>
+                <label><div class="item"><input type="checkbox" class="abilities"><a href="https://hollowknight.wiki/w/Cling_Grip#How_to_Acquire" target="_blank">Cling Grip</a></div></label>
+                <label><div class="item"><input type="checkbox" class="abilities"><a href="https://hollowknight.wiki/w/Needolin#How_to_Acquire" target="_blank">Needolin</a></div></label>
+                <label><div class="item"><input type="checkbox" class="abilities"><a href="https://hollowknight.wiki/w/Needle_Strike#How_to_Acquire" target="_blank">Needle Strike</a></div></label>
+                <label><div class="item"><input type="checkbox" class="abilities"><a href="https://hollowknight.wiki/w/Clawline#How_to_Acquire" target="_blank">Clawline</a></div></label>
+                <label><div class="item"><input type="checkbox" class="abilities"><a href="https://hollowknight.wiki/w/Silk_Soar#How_to_Acquire" target="_blank">Silk Soar</a></div></label>
+                <label><div class="item"><input type="checkbox" class="abilities"><a href="https://hollowknight.wiki/w/Sylphsong" target="_blank">Sylphsong</a></div></label>
+                <label><div class="item"><input type="checkbox" class="abilities"><a href="https://hollowknight.wiki/w/Everbloom" target="_blank">Everbloom</a></div></label>
+            </div>
         </div>
     </div>
-  </div>
 
 
   <script>
-    const checkboxes = document.querySelectorAll('.red_tool, .blue_tool, .yellow_tool, .needle, .mask_shards, .spool_fragments, .silk_hearts, .miscellaneous, .crests, .silk_skills, .crafting_kit, .tool_pouch, .abilities');
-    const progressBar = document.getElementById('progress-bar');
+    const checkboxes = document.querySelectorAll('.red-tool, .blue-tool, .yellow-tool, .needle, .mask-shards, .spool-fragments, .silk-hearts, .crests, .silk-skills, .crafting-kit, .tool-pouch, .abilities');
     const progressText = document.getElementById('progress-text');
+    const uncheckButton = document.getElementById('uncheck-all')
+
+    let states = {};
 
     function updateProgress() {
-      const total = checkboxes.length;
-      const checked = Array.from(checkboxes).filter(c => c.checked).length;
-      const percent = Math.round((checked / total) * 100);
+        let total_weight = 0;
+        let checked_weight = 0;
+        
+        checkboxes.forEach(cb =>{
+            const weight = parseFloat(cb.dataset.weight) || 1;
+            total_weight += weight;
+            if(cb.checked){
+                checked_weight += weight;
+            }
 
-      progressBar.style.width = percent + '%';
-      progressText.textContent = `${percent}% completo`;
+            states[cb.dataset.id] = cb.checked;
+        });
+
+        const percent = (checked_weight / total_weight) * 100
+        const percentText = Number.isInteger(percent)
+            ? percent.toString()
+            : percent.toFixed(2);
+        progressText.textContent = `${percentText}% done`;
+        localStorage.setItem('silksongChecklist', JSON.stringify(states));
     }
 
+    function loadSavedProgress() {
+        const saved = JSON.parse(localStorage.getItem('silksongChecklist') || '{}');
+        checkboxes.forEach(cb => {
+            if (saved[cb.dataset.id]) {
+                cb.checked = true;
+            }
+        });
+        updateProgress();
+    }
+
+    
+    uncheckButton.addEventListener('click', () => {
+        checkboxes.forEach(cb => cb.checked = false);
+        updateProgress();
+    });
+
     checkboxes.forEach(cb => cb.addEventListener('change', updateProgress));
+    checkboxes.forEach((cb, index) => {
+        if (!cb.dataset.id) {
+            cb.dataset.id = `cb-${index}`;
+        }
+    });
+    loadSavedProgress();
   </script>
 </body>
 </html>
